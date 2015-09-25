@@ -29,9 +29,6 @@ RUN groupadd tomcat
 RUN useradd -s /bin/bash -g tomcat tomcat
 RUN chown -Rf tomcat.tomcat /usr/local/tomcat
 
-#ln docment
-VOLUME /usr/local/tomcat
-
 #setting tomcat
 ADD settings.xml /usr/local/tomcat/conf/
 ADD tomcat-users.xml /usr/local/tomcat/conf/
