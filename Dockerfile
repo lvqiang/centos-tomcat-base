@@ -20,8 +20,8 @@ RUN rm jdk*.tar.gz
 RUN mv jdk* ${JAVA_HOME}
 
 #install tomcat 
-RUN wget http://mirrors.cnnic.cn/apache/tomcat/tomcat-7/v7.0.64/bin/apache-tomcat-7.0.64.tar.gz
-Run tar -xvf apache-tomcat-7.0.64.tar.gz
+RUN wget http://apache.opencas.org/tomcat/tomcat-7/v7.0.67/bin/apache-tomcat-7.0.67.tar.gz
+Run tar -xvf apache-tomcat-7.0.67.tar.gz
 Run rm apache-tomcat*.tar.gz
 Run mv apache-tomcat* ${CATALINA_HOME} 
 
